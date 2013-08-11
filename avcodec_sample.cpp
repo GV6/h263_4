@@ -17,6 +17,20 @@
 // to write the first five frames from "myvideofile.mpg" to disk in PPM
 // format.
 
+#ifdef __cplusplus
+
+#define __STDC_CONSTANT_MACROS
+
+#ifdef _STDINT_H
+
+#undef _STDINT_H
+
+#endif
+
+# include <stdint.h>
+
+#endif
+
 #include <avcodec.h>
 #include <avformat.h>
 
